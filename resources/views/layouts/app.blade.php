@@ -17,11 +17,9 @@
 <section>
     <div class="wrapper">
 
-        <nav id="siproNavbarSidebar" class="navbar-dark bg-dark collapse show">
-            @if(Auth::check())
-                @include('sidebar')
-            @endif
-        </nav>
+        @if(Auth::check())
+            @include('sidebar')
+        @endif
 
         <div id="siproContent">
             <header class="container text-center">

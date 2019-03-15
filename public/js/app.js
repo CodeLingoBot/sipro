@@ -17567,6 +17567,9 @@ var siPro = {
 
       reader.readAsDataURL(input.files[0]);
     }
+  },
+  extractEmails: function extractEmails(text) {
+    return text.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
   }
 };
 window.siPro = siPro;

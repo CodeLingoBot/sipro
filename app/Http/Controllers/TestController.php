@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Helpers\Boostrap\Alert;
 use App\Http\Controllers\Services\TestStore;
+use App\StudentTeacher;
 use App\Test;
 use App\TestCategory;
 use Illuminate\Http\Request;
@@ -153,9 +154,10 @@ class TestController extends Controller
      * @param Test $test
      * @return \Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
      */
-    public function apply(Test $test)
+    public function applyView(Test $test)
     {
-
+        $students = StudentTeacher::fromTeacher(Auth::user())->get();
+        return view("test.apply", [ "test" => $test, "students" => $students ]);
     }
 
 }
