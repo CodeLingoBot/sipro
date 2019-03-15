@@ -13881,3 +13881,19 @@ a[data-toggle=collapse] {
   padding-right: 40px;
 }
 
+#siproTextAreaEmails {
+  width: 100%;
+  min-height: 200px;
+}
+
+#siproEmailsBadges span {
+  margin: 5px;
+}
+
+#siproEmailsBadges span button {
+  padding: 5px;
+  line-height: 8px;
+  font-size: 10px;
+  margin-left: 5px;
+}
+

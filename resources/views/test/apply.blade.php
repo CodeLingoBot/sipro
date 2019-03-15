@@ -7,5 +7,11 @@
 @endsection
 
 @section('body')
-    
+    <form action="">
+        <div id="siproEmailsBadges"></div>
+        <textarea id="siproTextAreaEmails"></textarea>
+        <button type="button" class="btn btn-info" id="siproAddButton">{{_v('add')}}</button>
+        <button type="submit" class="btn btn-success" disabled id="siproSendButton">{{_v('send')}}</button>
+    </form>
+    <script type="text/javascript" src="{{ URL::asset('js/tests/apply.js') }}"></script>
 @endsection
