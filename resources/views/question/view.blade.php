@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('btn-left')
-    <a class="btn   btn-primary" href="{{ url('question') }}">
+    <a class="btn btn-primary" href="{{ url('question') }}">
         <i class="fa fa-btn fa-arrow-circle-left"></i> {{ _v('back') }}
     </a>
 @endsection

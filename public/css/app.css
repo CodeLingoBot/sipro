@@ -13877,3 +13877,7 @@ a[data-toggle=collapse] {
   flex: 1;
 }
 
+#siproMainNavbarDropdown {
+  padding-right: 40px;
+}
+
