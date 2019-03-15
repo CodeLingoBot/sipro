@@ -149,4 +149,13 @@ class TestController extends Controller
         return redirect()->to("test");
     }
 
+    /**
+     * @param Test $test
+     * @return \Illuminate\Contracts\Routing\ResponseFactory|\Illuminate\Http\Response
+     */
+    public function apply(Test $test)
+    {
+
+    }
+
 }

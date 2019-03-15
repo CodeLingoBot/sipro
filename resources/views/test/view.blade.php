@@ -42,6 +42,10 @@
                     <a class="btn btn-warning w-100" href="{{ url('/test/'.$test->id."/edit") }}">
                         <i class='fa fa-pencil'></i> {{ _v('edit') }}
                     </a>
+                    <hr>
+                    <a class="btn btn-info w-100" href="{{ url('/tests/'.$test->id."/apply") }}">
+                        <i class='fas fa-check'></i> {{ _v('apply') }}
+                    </a>
                 </td>
             </tr>
         @endforeach

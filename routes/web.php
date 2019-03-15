@@ -37,6 +37,9 @@ Route::group(['middleware' => ['web', 'auth']], function () {
     Route::get('tests/itens/{testCategory}', 'TestController@indexFromCategory');
     Route::get('tests/itens/{testCategory}/create', 'TestController@createFromCategory');
     Route::get('tests/itensWithoutCategory', 'TestController@indexWithoutCategory');
+    Route::get('tests/{test}/apply', function(App\Test $test){
+        return view("test.apply", [ "test" => $test ]);
+    });
     Route::get('tests/{test}/questions/{questionCategory?}', 'QuestionsInTestsController@index');
     Route::get('questions_in_tests/{test}/{question}/store', 'QuestionsInTestsController@store');
     Route::get('questions_in_tests/{test}/{question}/destroy', 'QuestionsInTestsController@destroy');

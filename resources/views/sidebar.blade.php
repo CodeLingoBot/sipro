@@ -10,6 +10,6 @@
         ['test_categories', url('/testCategory/'), 'fa fa-list'],
         ['tests', url('/test/'), 'fa fa-file-text'],
     ]))
-    @php(App\Helpers\Boostrap\NavItem::build('student', '#student-sub-menu', 'fas fa-chalkboard-teacher'))
+    @php(App\Helpers\Boostrap\NavItem::build('student', '#student-sub-menu', 'fas fa-graduation-cap'))
     @php(App\Helpers\Boostrap\NavItem::build('my_account', url('/user/'), 'fa fa-user'))
 </ul>

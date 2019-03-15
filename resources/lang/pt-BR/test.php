@@ -27,6 +27,7 @@ return [
         "see" => "Ver testes",
         "tests" => "testes",
         "title" => "Meus testes",
+        "apply" => "Aplicar"
     ],
     "confirm" => [
         "back" => "Voltar",
