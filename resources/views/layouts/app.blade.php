@@ -24,7 +24,13 @@
         <div id="siproContent">
             <header class="container text-center">
                 <h1>{{ __('app.title') }}</h1>
-                <h2>{{ _v('title') }}</h2>
+                @php
+                    $titleParams = [
+                        'action' => empty($action) ? null : $action,
+                        'name' => empty($name) ? null : $name
+                    ]
+                @endphp
+                <h2>{{ _v('title', $titleParams) }}</h2>
             </header>
 
             <div class="container">
