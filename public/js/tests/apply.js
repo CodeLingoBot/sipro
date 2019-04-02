@@ -10501,7 +10501,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
     var emails = window.siPro.extractEmails(jquery__WEBPACK_IMPORTED_MODULE_0___default()('#siproTextAreaEmails').val());
     var badgesContent = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#siproEmailsBadges');
     jquery__WEBPACK_IMPORTED_MODULE_0___default()(emails).each(function (_index, email) {
-      if (badgesContent.find('span[data-email="' + email + '"]').length === 0) badgesContent.append(make(email));
+      if (badgesContent.find('button[data-email="' + email + '"]').length === 0) badgesContent.append(make(email));
     });
     process(emails);
   });
@@ -10516,7 +10516,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\www\tries\SiPro\resources\assets\js\tests\apply.js */"./resources/assets/js/tests/apply.js");
+module.exports = __webpack_require__(/*! /home/gui/Documentos/personal/sipro/resources/assets/js/tests/apply.js */"./resources/assets/js/tests/apply.js");
 
 
 /***/ })
